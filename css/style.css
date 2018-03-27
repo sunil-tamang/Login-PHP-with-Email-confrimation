@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+
+/* Conatiner */
+
+.right-container {
+
+    width: 100%;
+    height:85%;
+
+}
+
+input::placeholder {
+    color: grey;
+    font-size: 15px;
+}
+
+
+
+form {
+    position: absolute;
+    left: 28%;
+    top: 20%;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+
+
+}
+
+.input-group {
+    position: relative;
+}
+
+.font {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 15px;
+     color: black;
+
+}
+
+
+.controls {
+    width: 100%;
+    border: 0;
+    border: 1px solid #d9dadc;
+    padding: 15px;
+    margin-top: 10px;
+    text-indent: 30px;
+}
+
+.logo {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 0.5px solid #d9dadc;
+    background-image: url(download.svg);
+    background-color:none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 50px;
+
+}
+
+
+.message {
+    color: #FF0000;
+}
+
+.highlight {
+
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+.button-wrapper {
+    width: 100%;
+    height: auto;
+
+
+}
+
+#login-btn {
+    width: 35%;
+    height: auto;
+    border: 0.5px solid #1bc0f7;
+    border-radius: 3px;
+    padding: 12px;
+    background: transparent;
+    box-shadow: 0 0 1px 0 #1bc0f7 inset, 0 0 1px 1px #1bc0f7;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    font-size: 15px;
+
+
+
+}
+
+#login-btn:hover {
+    box-shadow: 0 0 40px 40px #1bc0f7 inset, 0 0 0 0 #1bc0f7;
+}
+
+#login-btn:active {
+    background-color: #1bc0f7;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
+
+#google-btn,
+#facebook-btn {
+    width: 45%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+#google-btn a,
+#facebook-btn a {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#facebook-btn {
+    background-color: dodgerblue;
+
+}
+
+#google-btn {
+    background-color: red;
+
+}
+
+.line-thru {
+    display: block;
+    font-size: .875em;
+    margin-bottom: 1em;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.line-thru:after {
+    border-bottom: 1px solid #dfe0e6;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    z-index: -2;
+}
+
+.line-thru:before {
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    margin: -5px 0 0 -20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+@media screen and (min-width:250px) and (max-width:600px) {
+
+
+    .right-container {
+        float: none;
+        width: 100%;
+        height: 90%;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:250px) and (max-width:1200px) {
+
+    form {
+        top: 15%;
+        left: 0;
+        margin-left: 0%;
+        margin-top: 0;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+      .line-thru {
+        display: block;
+        font-size: .875em;
+        margin-bottom: 1em;
+        position: relative;
+        top: 15px;
+        left: 10%;
+        text-align: center;
+        width: 80%;
+        z-index: 1;
+    }
+
+
+    .controls {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        padding: 40px;
+
+    }
+
+    #google-btn,
+    #facebook-btn {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    #login-btn {
+        width: 80%;
+
+    }
+    #google-btn a,
+    #facebook-btn a {
+        font-size: 15px;
+    }
+
+    .font {
+        margin-top: 28px;
+        margin-left: 18px;
+
+    }
+
+footer p{
+
+    padding:10px;
+    font-size:10px;
+
+}
+
+
+
+}
